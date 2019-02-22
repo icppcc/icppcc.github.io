@@ -21,8 +21,6 @@
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/venobox/venobox.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
@@ -47,7 +45,7 @@
 
             <section id="intro">
                 <div class="intro-container wow fadeIn">
-                    <a><img src="img/voice-open.png" style=" position: absolute;top: -25px;right: 25px;" id="voice-button"></a>
+                    <img src="img/voice.png" id="voice-button">
                     <h1 class="mb-4 pb-0">长三角<br><span>地区政协联动机制</span> 实录</h1>
                     <p class="mb-4 pb-0">2018年6月20日，沪苏浙皖三省一市政协主席共签协议。<br>长三角地区政协履职协同联动机制正式启动。</p>
                     <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
@@ -78,21 +76,12 @@
             </section>
         </div>
 
-        <!-- <div class="section">
-            <div class="slide">第三屏的第一屏</div>
-            <div class="slide">第三屏的第二屏</div>
-            <div class="slide">第三屏的第三屏</div>
-            <div class="slide">第三屏的第四屏</div>
-        </div> -->
+
 
         <!-- 第三屏 -->
         <div class="section">
             <section id="wang">
                 <div class="container">
-                    <!-- <div class="section-header">
-                                    <h2>Event Speakers</h2>
-                                    <p>Here are some of our speakers</p>
-                                </div> -->
 
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -144,11 +133,7 @@
 <script src="lib/jquery/jquery-migrate.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
-<script src="lib/superfish/hoverIntent.js"></script>
-<script src="lib/superfish/superfish.min.js"></script>
 <script src="lib/wow/wow.min.js"></script>
-<script src="lib/venobox/venobox.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <!-- jquery.easings.min.js  可以支持更多动画过渡的效果，用于 easing 参数，也可以用jQuery UI 代替，如果不需要，可去不要文件 -->
 <script src="lib/jquery/jquery-ui-1.10.3.min.js"></script>
 <script src="lib/fullpage/jquery.fullPage.min.js"></script>
@@ -172,6 +157,36 @@
         $('#gufeibai').fullpage();　
     });
 </script>
+
+<script>
+    //点击图标停止转动，再次点击开始转动
+    // var audio=document.getElementById("audio");
+    // audio.play()
+    //jquery转化为js  $("")[0]  $("").get(0)
+    $("#audio").get(0).play();
+
+    var flag = false;
+    $("#voice-button").click(function() {
+        if (!flag) {
+            //$(this).css({"-webkit-animation-iteration-count":"0"});
+            $(this).css({
+                "-webkit-animation-play-state": "paused"
+            });
+            //音乐停止
+            $("#audio").get(0).pause();
+            flag = true;
+        } else {
+            //$(this).css({"-webkit-animation-iteration-count":"infinite"});
+            $(this).css({
+                "-webkit-animation-play-state": "running"
+            });
+            //音乐播放
+            $("#audio").get(0).play();
+            flag = false;
+        }
+    })
+</script>
+
 
 </body>
 
