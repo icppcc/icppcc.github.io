@@ -121,14 +121,14 @@
     
     #voice-button {
         position: absolute;
-        top: -25px;
-        right: 25px;
+        top: -60px;
+        right: 12px;
         -webkit-animation-name: rotatae;
         -webkit-animation-duration: 2s;
         -webkit-animation-timing-function: linear;
         -webkit-animation-iteration-count: infinite;
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
     }
     /* Sections Header
 --------------------------------*/
