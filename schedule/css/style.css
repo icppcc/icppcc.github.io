@@ -250,6 +250,16 @@ img {
 }
 
 
+/* --------hint--------- */
+
+#hint {
+    position: absolute;
+    bottom: 8%;
+    left: 35%;
+    font-size: 35px;
+}
+
+
 /* <!-- -----voice button roll----- --> */
 
 
