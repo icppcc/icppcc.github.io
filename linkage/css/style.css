@@ -62,15 +62,22 @@ img {
 /*****************************第一张*********************************/
 
 .section0 .pic1 {
-    width: 50%;
-    left: 25%;
-    top: 25%;
+    width: 30%;
+    left: 36%;
+    top: 8%;
 }
 
 .section0 .pic2 {
     width: 25%;
     left: 38%;
     bottom: 180px;
+    z-index: 21;
+}
+
+.section0 .pic3 {
+    width: 80%;
+    left: 10%;
+    bottom: 235px;
     z-index: 21;
 }
 
@@ -175,9 +182,9 @@ img {
 
 #hint {
     position: absolute;
-    bottom: 95px;
-    left: 44%;
-    font-size: 35px;
+    bottom: 75px;
+    left: 41%;
+    font-size: 25px;
 }
 
 #hint2 {
