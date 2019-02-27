@@ -6,7 +6,7 @@
 
 <body>
     <div id="top">
-        <audio id="audio" src="audio/bgm-2.mp3" controls autoplay="autoplay" loop style="display: none;"></audio>
+        <audio id="audio" src="audio/bgm.mp3" controls autoplay="autoplay" loop style="display: none;"></audio>
         <img style="position: absolute;z-index: 100;right: 65px;top: 65px;width: 65px;height: 65px;" src="images/button/voice.png" id="voice-button">
     </div>
     <div id="content">
@@ -39,6 +39,18 @@
             flag = false;
         }
     })
+
+    var bgAudio = document.getElementById('audio'),
+        forceMute = false;
+    document.addEventListener("WeixinJSBridgeReady", function() {
+        bgAudio.play();
+    }, false);
+
+    function audioPlay() {
+        bgAudio.play();
+        document.removeEventListener('touchstart', audioPlay, false);
+    }
+    document.addEventListener('touchstart', audioPlay, false);
 </script>
 
 </html>
