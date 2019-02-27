@@ -61,28 +61,16 @@ img {
 
 /*****************************第一张*********************************/
 
-.section0 .pic0 {
-    width: 100%;
-    left: -20%;
-    top: 0px;
-}
-
 .section0 .pic1 {
     width: 50%;
     left: 25%;
     top: 25%;
 }
 
-.section0 .pic3 {
-    width: 100%;
-    left: 0px;
-    bottom: 20px;
-}
-
 .section0 .pic2 {
     width: 25%;
     left: 38%;
-    bottom: 160px;
+    bottom: 180px;
     z-index: 21;
 }
 
@@ -164,21 +152,21 @@ img {
 .section1 .section1_pic3 {
     width: 90%;
     left: 5%;
-    top: 40%;
+    top: 615px;
     z-index: 3;
 }
 
 .section1 .section1_pic4 {
     width: 90%;
     left: 5%;
-    top: 60%;
+    top: 880px;
     z-index: 3;
 }
 
 .section1 .section1_pic5 {
     width: 90%;
     left: 5%;
-    top: 80%;
+    top: 1145px;
     z-index: 3;
 }
 
@@ -187,9 +175,23 @@ img {
 
 #hint {
     position: absolute;
-    bottom: 8%;
+    bottom: 95px;
+    left: 44%;
+    font-size: 35px;
+}
+
+#hint2 {
+    position: absolute;
+    bottom: 25px;
     left: 35%;
     font-size: 35px;
+}
+
+
+/* ----about text---- */
+
+.about-text {
+    margin-bottom: 10px;
 }
 
 
