@@ -178,6 +178,30 @@ img {
 }
 
 
+/*****************************第三张*********************************/
+
+.section2 .section2_pic3 {
+    width: 90%;
+    left: 5%;
+    top: 15%;
+    z-index: 3;
+}
+
+.section2 .section2_pic4 {
+    width: 90%;
+    left: 5%;
+    top: 35%;
+    z-index: 3;
+}
+
+.section2 .section2_pic5 {
+    width: 90%;
+    left: 5%;
+    top: 55%;
+    z-index: 3;
+}
+
+
 /* --------hint--------- */
 
 #hint {
@@ -199,6 +223,8 @@ img {
 
 .about-text {
     margin-bottom: 5px;
+    font-size: 35px;
+    color: #ffffff;
 }
 
 
