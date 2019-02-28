@@ -68,16 +68,16 @@ img {
 }
 
 .section0 .pic2 {
-    width: 25%;
-    left: 38%;
-    bottom: 180px;
+    width: 20%;
+    left: 40%;
+    bottom: 300px;
     z-index: 21;
 }
 
 .section0 .pic3 {
     width: 80%;
     left: 10%;
-    bottom: 235px;
+    bottom: 28%;
     z-index: 21;
 }
 
@@ -157,23 +157,23 @@ img {
 }
 
 .section1 .section1_pic3 {
-    width: 90%;
-    left: 5%;
-    top: 42%;
+    width: 95%;
+    left: 2%;
+    top: 45%;
     z-index: 3;
 }
 
 .section1 .section1_pic4 {
-    width: 90%;
-    left: 5%;
-    top: 60%;
+    width: 95%;
+    left: 2%;
+    top: 63%;
     z-index: 3;
 }
 
 .section1 .section1_pic5 {
-    width: 90%;
-    left: 5%;
-    top: 78%;
+    width: 95%;
+    left: 2%;
+    top: 81%;
     z-index: 3;
 }
 
@@ -182,9 +182,9 @@ img {
 
 #hint {
     position: absolute;
-    bottom: 75px;
-    left: 41%;
-    font-size: 25px;
+    bottom: 85px;
+    left: 43%;
+    font-size: 35px;
 }
 
 #hint2 {
